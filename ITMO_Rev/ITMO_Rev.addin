@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>ITMO_Rev</Name>
+		<Assembly>C:\Program Files\ITMO_Rev\ITMO_Rev.dll</Assembly>		
+		<FullClassName>ITMO_Rev.BarClass</FullClassName>
+		<ClientId>A5C5884C-FA3E-47F5-A343-03B79D024385</ClientId>
+		<VendorId>ADSK</VendorId>
+		<VendorDescription>By Dmitry Morozov</VendorDescription>
+	</AddIn>
+</RevitAddIns>
