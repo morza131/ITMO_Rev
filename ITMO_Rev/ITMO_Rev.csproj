@@ -50,10 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BarClass.cs" />
+    <Compile Include="Filters\PipeFilter.cs" />
+    <Compile Include="Filters\WallFilter.cs" />
     <Compile Include="Lesson2\Button1.cs" />
     <Compile Include="Lesson2\Button2.cs" />
     <Compile Include="Lesson2\Button3.cs" />
     <Compile Include="Lesson2\Button4.cs" />
+    <Compile Include="Lesson3\Button1.cs" />
+    <Compile Include="Lesson3\Button2.cs" />
+    <Compile Include="Lesson3\Button3.cs" />
+    <Compile Include="Lesson3\Button4.cs" />
+    <Compile Include="MyTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
