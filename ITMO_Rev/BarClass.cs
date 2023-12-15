@@ -29,6 +29,7 @@ namespace ITMO_Rev
             ITMO_App2.AddItem(buttonData2_3);
             PushButtonData buttonData2_4 = new PushButtonData(nameof(Button4), "Задание 4", assemblyLocation, typeof(Button4).FullName);
             ITMO_App2.AddItem(buttonData2_4);
+
             RibbonPanel ITMO_App3 = application.CreateRibbonPanel(tabName, "Урок 3");
             PushButtonData buttonData3_1 = new PushButtonData(nameof(Lesson3.Button1), "Задание 1", assemblyLocation, typeof(Lesson3.Button1).FullName);
             ITMO_App3.AddItem(buttonData3_1);
@@ -38,6 +39,13 @@ namespace ITMO_Rev
             ITMO_App3.AddItem(buttonData3_3);
             PushButtonData buttonData3_4 = new PushButtonData(nameof(Lesson3.Button4), "Задание 4", assemblyLocation, typeof(Lesson3.Button4).FullName);
             ITMO_App3.AddItem(buttonData3_4);
+
+            RibbonPanel ITMO_App4 = application.CreateRibbonPanel(tabName, "Урок 4");
+            PushButtonData buttonData4_1 = new PushButtonData(nameof(Lesson4.Button1), "Задание 1", assemblyLocation, typeof(Lesson4.Button1).FullName);
+            ITMO_App4.AddItem(buttonData4_1);
+            PushButtonData buttonData4_2 = new PushButtonData(nameof(Lesson4.Button2), "Задание 2", assemblyLocation, typeof(Lesson4.Button2).FullName);
+            ITMO_App4.AddItem(buttonData4_2);
+
             return Result.Succeeded;
         }
         public Result OnShutdown(UIControlledApplication application)
