@@ -1,0 +1,17 @@
+﻿<Window x:Class="ITMO_Rev.Lesson5.WPF_Task1.DoorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ITMO_Rev.Lesson5.WPF_Task1"
+             mc:Ignorable="d" 
+                      d:DesignHeight="150" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Количество дверей:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"/>
+        <TextBlock x:Name="doorCountText" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+    </Grid>
+</Window>
