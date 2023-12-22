@@ -1,0 +1,27 @@
+﻿<Window x:Class="ITMO_Rev.Lesson6.WPF1.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ITMO_Rev.Lesson6.WPF1"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="listOfTypes" Margin="5" ItemsSource="{Binding DuctTypes}" SelectedValue="{Binding SelectedDuctType}"
+                  DisplayMemberPath="Name"/>
+        <ComboBox x:Name="listOfLevels" Grid.Column="1" Margin="5" ItemsSource="{Binding Levels}" SelectedValue="{Binding SelectedLevel}"
+                  DisplayMemberPath="Name"/>
+        <Label Content="Уровень смещения" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>
+        <TextBox x:Name="levelOfDuct" Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding Elevation}"/>
+        <Button x:Name="createDuct" Content="Создать воздуховод" Grid.Row="2" Grid.ColumnSpan="2" Margin="5" Command="{Binding CreateDuctCommand}"/>
+    </Grid>
+</Window>

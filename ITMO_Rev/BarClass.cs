@@ -11,7 +11,7 @@ using ITMO_Rev.Lesson3;
 
 namespace ITMO_Rev
 {
-    internal class BarClass : IExternalApplication
+    public class BarClass : IExternalApplication
     {       
         public Result OnStartup(UIControlledApplication application)
         {
@@ -51,6 +51,14 @@ namespace ITMO_Rev
             ITMO_App5.AddItem(buttonData5_1);
             PushButtonData buttonData5_2 = new PushButtonData(nameof(Lesson5.WPF_Task2.WPFButton2), "Задание 2", assemblyLocation, typeof(Lesson5.WPF_Task2.WPFButton2).FullName);
             ITMO_App5.AddItem(buttonData5_2);
+
+            RibbonPanel ITMO_App6 = application.CreateRibbonPanel(tabName, "Урок 6");
+            PushButtonData buttonData6_1 = new PushButtonData(nameof(Lesson6.WPF1.WPF_Button1), "Задание 1", assemblyLocation, typeof(Lesson6.WPF1.WPF_Button1).FullName);
+            ITMO_App6.AddItem(buttonData6_1);
+            PushButtonData buttonData6_2 = new PushButtonData(nameof(Lesson6.WPF2.WPF_Button2), "Задание 2", assemblyLocation, typeof(Lesson6.WPF2.WPF_Button2).FullName);
+            ITMO_App6.AddItem(buttonData6_2);
+            PushButtonData buttonData6_3 = new PushButtonData(nameof(Lesson6.WPF3.WPF_Button3), "Задание 3", assemblyLocation, typeof(Lesson6.WPF3.WPF_Button3).FullName);
+            ITMO_App6.AddItem(buttonData6_3);  
 
             return Result.Succeeded;
         }
