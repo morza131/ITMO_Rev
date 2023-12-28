@@ -18,9 +18,7 @@ namespace ITMO_Rev.Lesson6.WPF3
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public FamilySymbol SelectedFurnitureSymbol { get; set; }
-        //public Level SelectedLevel { get; set; }
         public List<FamilySymbol> FurnitureSymbols { get; set; }
-        //public List<Level> Levels { get; set; }
         public XYZ FirstPoint { get; set; }        
         public XYZ SecondPoint { get; set; }  
         public int NumberOfInstances { get; set; }
@@ -36,7 +34,7 @@ namespace ITMO_Rev.Lesson6.WPF3
             SecondPoint = secondPoint;
             CreateFurnitureCommand = new DelegateCommand(OnCreateFurnitureCommandExecute);
             FurnitureSymbols = WPF3Model.GetFurnitureSymbols(commandData);
-            //Levels = WPF3Model.GetLevels(commandData);
+            
         }
 
         private void OnCreateFurnitureCommandExecute()

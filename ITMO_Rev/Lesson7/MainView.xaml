@@ -1,0 +1,48 @@
+﻿<Window x:Class="ITMO_Rev.Lesson7.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ITMO_Rev.Lesson7"
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Выберите типоразмер листа"
+               HorizontalAlignment="Right" VerticalAlignment="Center"
+               Margin="5"/>
+        <ComboBox x:Name="TypeComboBox" Grid.Row="0" Grid.Column="1"
+                  Grid.ColumnSpan="2"
+                  Margin="5"
+                  ItemsSource="{Binding ListOfTitles}"
+                  SelectedValue="{Binding SelectedTitle}"
+                  DisplayMemberPath="Name"/>
+        <Label Content="Введите количество создаваемых листов"
+               HorizontalAlignment="Right" VerticalAlignment="Center"
+               Margin="5"
+               Grid.Row="1"
+               />
+        <TextBox x:Name="CountTextBox"
+                 Grid.Row="1" Grid.Column="1"
+                 Margin="5"
+                 Text="{Binding NumberOfTitles}"/>
+        <CheckBox x:Name="ShowSelectionViewsCheckBox" Content="Выбрать виды для листов"
+                  Grid.Row="2" Grid.ColumnSpan="2"
+                  Margin="5"
+                  VerticalAlignment="Center" HorizontalAlignment="Center"
+                  IsChecked="{Binding IsSelectViews}"/>
+        <Button x:Name="CreateButton" Content="Создать листы"
+                Grid.Row="3" Grid.ColumnSpan="2"
+                Margin="5"
+                Command="{Binding CreateTitlesCommand}"/>
+    </Grid>
+</Window>

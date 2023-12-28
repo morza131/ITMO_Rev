@@ -19,8 +19,7 @@
         </Grid.RowDefinitions>
         <ComboBox x:Name="listOfTypes" Margin="5" Grid.ColumnSpan="2" ItemsSource="{Binding FurnitureSymbols}"
                   SelectedValue="{Binding SelectedFurnitureSymbol}"
-                  DisplayMemberPath="Name"/>
-        <!--<ComboBox x:Name="listOfLevels" Grid.Column="1" Margin="5" ItemsSource="{Binding Levels}" SelectedValue="{Binding SelectedLevel}"/>-->
+                  DisplayMemberPath="Name"/>        
         <Label Content="Уровень смещения" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>
         <TextBox x:Name="levelOfFurniture" Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding Elevation}"/>
         <Label Content="Число элементов" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>

@@ -58,7 +58,11 @@ namespace ITMO_Rev
             PushButtonData buttonData6_2 = new PushButtonData(nameof(Lesson6.WPF2.WPF_Button2), "Задание 2", assemblyLocation, typeof(Lesson6.WPF2.WPF_Button2).FullName);
             ITMO_App6.AddItem(buttonData6_2);
             PushButtonData buttonData6_3 = new PushButtonData(nameof(Lesson6.WPF3.WPF_Button3), "Задание 3", assemblyLocation, typeof(Lesson6.WPF3.WPF_Button3).FullName);
-            ITMO_App6.AddItem(buttonData6_3);  
+            ITMO_App6.AddItem(buttonData6_3);
+
+            RibbonPanel ITMO_App7 = application.CreateRibbonPanel(tabName, "Урок 7");
+            PushButtonData buttonData7_1 = new PushButtonData(nameof(Lesson7.Main), "Задание 1", assemblyLocation, typeof(Lesson7.Main).FullName);
+            ITMO_App7.AddItem(buttonData7_1);
 
             return Result.Succeeded;
         }
