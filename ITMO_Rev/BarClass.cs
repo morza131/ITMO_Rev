@@ -64,6 +64,14 @@ namespace ITMO_Rev
             PushButtonData buttonData7_1 = new PushButtonData(nameof(Lesson7.Main), "Задание 1", assemblyLocation, typeof(Lesson7.Main).FullName);
             ITMO_App7.AddItem(buttonData7_1);
 
+            RibbonPanel ITMO_App8 = application.CreateRibbonPanel(tabName, "Урок 8");
+            PushButtonData buttonData8_1 = new PushButtonData(nameof(Lesson8.Button1), "Задание 1", assemblyLocation, typeof(Lesson8.Button1).FullName);
+            ITMO_App8.AddItem(buttonData8_1);
+            PushButtonData buttonData8_2 = new PushButtonData(nameof(Lesson8.Button2), "Задание 2", assemblyLocation, typeof(Lesson8.Button2).FullName);
+            ITMO_App8.AddItem(buttonData8_2);
+            PushButtonData buttonData8_3 = new PushButtonData(nameof(Lesson8.Button3), "Задание 3", assemblyLocation, typeof(Lesson8.Button3).FullName);
+            ITMO_App8.AddItem(buttonData8_3);
+
             return Result.Succeeded;
         }
         public Result OnShutdown(UIControlledApplication application)
